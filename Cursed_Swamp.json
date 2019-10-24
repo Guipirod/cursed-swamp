@@ -1,0 +1,70 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CursedSwamp",
+				"abbreviation": "CW",
+				"full": "Cursed Swamp",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		]
+	},
+	"dateAdded": 1571923674,
+	"monster": [
+		{
+			"name": "Third Soldier",
+			"source": "CursedSwamp",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+3",
+				"con": "+4"
+			},
+			"skill": {
+				"intimidation": "+1",
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"tokenUrl": "https://raw.githubusercontent.com/Guipirod/cursed-swamp/master/tokens/third_soldier_sword.png?token=AHHOUUWVQQHQHNF3I5HGUSS5WGTAW",
+			"languageTags": [
+				"C"
+			]
+		}
+	]
+}
