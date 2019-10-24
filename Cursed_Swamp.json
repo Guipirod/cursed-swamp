@@ -11,7 +11,7 @@
 			}
 		]
 	},
-	"dateAdded": 1571923674,
+	"dateAdded": 1571923833,
 	"monster": [
 		{
 			"name": "Third Soldier",
@@ -61,7 +61,7 @@
 				"Common"
 			],
 			"cr": "2",
-			"tokenUrl": "https://raw.githubusercontent.com/Guipirod/cursed-swamp/master/tokens/third_soldier_sword.png?token=AHHOUUWVQQHQHNF3I5HGUSS5WGTAW",
+			"tokenUrl": "https://raw.githubusercontent.com/Guipirod/cursed-swamp/master/tokens/third_soldier_sword.png",
 			"languageTags": [
 				"C"
 			]
