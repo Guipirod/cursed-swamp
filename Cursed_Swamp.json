@@ -11,10 +11,10 @@
 			}
 		]
 	},
-	"dateAdded": 1571924689,
+	"dateAdded": 1571930164,
 	"monster": [
 		{
-			"name": "Third Soldier [NOT FINISHED]",
+			"name": "Third Soldier",
 			"source": "CursedSwamp",
 			"size": "M",
 			"type": {
@@ -35,8 +35,8 @@
 				}
 			],
 			"hp": {
-				"average": 4,
-				"formula": "1d8"
+				"formula": "7d8 + 14",
+				"average": 45
 			},
 			"speed": {
 				"walk": 30
@@ -61,9 +61,57 @@
 				"Common"
 			],
 			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The soldier has advantage on an attack roll against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Trickery Training",
+					"entries": [
+						"The Third Soldier can take the action {@action Disengage} as a bonus action on each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The soldier makes two melee attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
 			"tokenUrl": "https://raw.githubusercontent.com/Guipirod/cursed-swamp/master/tokens/third_soldier_sword.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
 			"languageTags": [
 				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
 			]
 		}
 	]
