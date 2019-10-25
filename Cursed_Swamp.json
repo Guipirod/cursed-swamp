@@ -11,7 +11,7 @@
 			}
 		]
 	},
-	"dateAdded": 1572010587,
+	"dateAdded": 1572010847,
 	"monster": [
 		{
 			"name": "Third Soldier",
@@ -410,6 +410,7 @@
 					]
 				}
 			],
+			"tokenUrl": "https://github.com/Guipirod/cursed-swamp/blob/master/tokens/chaplain.png?raw=true",
 			"languageTags": [
 				"CE",
 				"C"
