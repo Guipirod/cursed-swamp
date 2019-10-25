@@ -11,7 +11,7 @@
 			}
 		]
 	},
-	"dateAdded": 1572010196,
+	"dateAdded": 1572010587,
 	"monster": [
 		{
 			"name": "Third Soldier",
@@ -325,13 +325,13 @@
 			"wis": 16,
 			"cha": 12,
 			"save": {
-				"con": "+3",
-				"wis": "+5"
+				"wis": "+5",
+				"cha": "+3"
 			},
 			"skill": {
 				"intimidation": "+3",
-				"nature": "+2",
-				"religion": "+2"
+				"religion": "+2",
+				"deception": "+3"
 			},
 			"passive": 13,
 			"languages": [
