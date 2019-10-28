@@ -10,3 +10,6 @@ https://www.youtube.com/watch?v=FfYItCw00Z4
 
 >>> Creador de mapas para mazmorras (Usar tipo de mapa "Cross Hatch (with grid)")
 https://www.mipui.net/app/index.html
+
+>>> Generador de mazmorras en el estilo "Cross Hatch (with grid)", sirve como curiosidad
+https://watabou.itch.io/one-page-dungeon
