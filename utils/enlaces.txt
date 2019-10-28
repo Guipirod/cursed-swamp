@@ -7,3 +7,6 @@ https://5e.tools/
 >>> Matthew Colville (Sabio)
 https://www.youtube.com/watch?v=y_zl8WWaSyI
 https://www.youtube.com/watch?v=FfYItCw00Z4
+
+>>> Creador de mapas para mazmorras (Usar tipo de mapa "Cross Hatch (with grid)")
+https://www.mipui.net/app/index.html
