@@ -1,5 +1,5 @@
 >>> Plantilla 5e sharelatex:
-https://es.overleaf.com/latex/templates/d-and-d-5e-latex-template/vmfdkjfhfynv
+https://www.overleaf.com/latex/templates/d-and-d-5e-latex-template/vmfdkjfhfynv
 
 >>> 5etools
 https://5e.tools/
