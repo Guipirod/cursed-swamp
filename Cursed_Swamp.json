@@ -11,7 +11,7 @@
 			}
 		]
 	},
-	"dateAdded": 1572962086,
+	"dateAdded": 1572973116,
 	"monster": [
 		{
 			"name": "Third Soldier",
@@ -66,7 +66,7 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The soldier has advantage on an attack roll against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"The soldier has advantage on an attack rolls against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				},
 				{
@@ -244,7 +244,7 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The soldier has advantage on an attack roll against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"The soldier has advantage on an attack rolls against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -398,7 +398,7 @@
 				{
 					"name": "Inspire Fanatism",
 					"entries": [
-						"As a bonus action the chaplain points at a creature he can see within 60 feet of him, the target takes 10 ({@damage 3d6}) fire damage and has advantage on all its attacks until the end of its next turn. A creature can resist this effect by succeding on a {@dc 13} Wisdom saving throw, or by having inmunity to the {@condition charmed} condition."
+						"As a bonus action the chaplain points at a creature he can see within 60 feet of him, the target takes 10 ({@damage 3d6}) fire damage and has advantage on all its attacks until the end of its next turn. A creature can resist this effect by succeding on a {@dc 13} Wisdom saving throw, or being invulnerable to the {@condition charmed} condition."
 					]
 				}
 			],
@@ -427,7 +427,7 @@
 			]
 		},
 		{
-			"name": "Third Chaplain [To be compared]",
+			"name": "Third Captain [To be Finished]",
 			"source": "CursedSwamp",
 			"size": "M",
 			"type": {
@@ -442,122 +442,81 @@
 			],
 			"ac": [
 				{
-					"ac": 13,
+					"ac": 18,
 					"from": [
-						"{@item studded leather armor|phb}"
+						"{@item plate armor|phb}"
 					]
 				}
 			],
 			"hp": {
-				"formula": "11d6 + 11",
-				"average": 49
+				"formula": "13d8 + 26",
+				"average": 84
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 14,
-			"dex": 13,
-			"con": 12,
+			"str": 12,
+			"dex": 18,
+			"con": 14,
 			"int": 10,
-			"wis": 16,
+			"wis": 12,
 			"cha": 12,
 			"save": {
-				"wis": "+5",
-				"cha": "+3"
+				"con": "+4",
+				"dex": "+6"
 			},
 			"skill": {
 				"intimidation": "+3",
-				"religion": "+2",
-				"deception": "+3"
+				"perception": "+3",
+				"athletics": "+3"
 			},
 			"passive": 13,
 			"languages": [
-				"Celestial",
 				"Common"
 			],
-			"cr": "3",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The chaplain is a 5th-level spellcaster. It's spellcasting ability is Wisdom (save {@dc 13}, {@hit 5} to hit with spell attacks). The chaplain has the following cleric spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell guidance|PHB}",
-								"{@spell light|PHB}",
-								"{@spell sacred flame|PHB} (fire damage)",
-								"{@spell thaumaturgy|PHB}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell bless|PHB}",
-								"{@spell cure wounds|PHB}",
-								"{@spell detect magic|PHB}",
-								"{@spell guiding bolt|PHB} (fire damage)"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell hold person|PHB}",
-								"{@spell prayer of healing|PHB}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell create food and water|PHB}",
-								"{@spell dispel magic|PHB}"
-							],
-							"slots": 2
-						}
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
+			"cr": "4",
 			"trait": [
 				{
-					"name": "Zealous Accusation",
+					"name": "Pack Tactics",
 					"entries": [
-						"As a bonus action the chaplain points at a creature he can see within 60 feet of him, the target must succeed on a {@dc 13} Charisma saving throw or become vulnerable to fire damage for a minute. A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
-					]
-				},
-				{
-					"name": "Botafumeiro",
-					"entries": [
-						"The chaplain wears a botafumeiro, a smoke expelling heavy bell with a chain that he can use as both melee weapon and spellcasting focus for his cleric spells."
-					]
-				},
-				{
-					"name": "Inspire Fanatism",
-					"entries": [
-						"As a bonus action the chaplain points at a creature he can see within 60 feet of him, the target takes 10 ({@damage 3d6}) fire damage and has advantage on all its attacks until the end of its next turn. A creature can resist this effect by succeding on a {@dc 13} Wisdom saving throw, or being invulnerable to the {@condition charmed} condition."
+						"The captain has advantage on an attack rolls against a creature if at least one of the captain's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Botafumeiro Strike",
+					"name": "Multiattack",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, plus 7 ({@damage 2d6}) fire damage. A creature hit by this attack must succeed on a {@dc 13} Dexterity saving throw or be {@condition blinded} until the end of its next turn."
+						"The captain makes two melee attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
 					]
 				}
 			],
-			"tokenUrl": "https://github.com/Guipirod/cursed-swamp/blob/master/tokens/chaplain.png?raw=true",
+			"reaction": [
+				{
+					"name": "Riposte",
+					"entries": [
+						"The captain adds 2 to its AC against one melee attack that would hit it, if the attacks fails the captain can, as a par of this reaction, make a melee weapon attack against the attacking creature. To do so, the captain must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/Guipirod/cursed-swamp/master/tokens/third_soldier_sword.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
 			"languageTags": [
-				"CE",
 				"C"
 			],
 			"damageTags": [
-				"B",
-				"F"
-			],
-			"spellcastingTags": [
-				"CC"
+				"P"
 			],
 			"miscTags": [
 				"MW"
