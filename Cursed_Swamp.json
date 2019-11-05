@@ -11,7 +11,7 @@
 			}
 		]
 	},
-	"dateAdded": 1572010847,
+	"dateAdded": 1572941168,
 	"monster": [
 		{
 			"name": "Third Soldier",
@@ -189,6 +189,343 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			]
+		},
+		{
+			"name": "Third Piker [To be compared]",
+			"source": "CursedSwamp",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"str": "+5",
+				"con": "+4"
+			},
+			"skill": {
+				"intimidation": "+3",
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The soldier has advantage on an attack roll against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The piker makes two melee weapon attacks."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Piker Wall",
+					"entries": [
+						"When an creature the piker can see enters his melee attack reach, he can use his reaction to make an opportunity attack against that creature, the piker has advantage on this attack roll if he has another piker within 10 feet of him.",
+						"If this attack hits a creature, the creature's speed becomes 0 for the rest of the turn."
+					]
+				}
+			],
+			"tokenUrl": "https://github.com/Guipirod/cursed-swamp/blob/master/tokens/third_soldier_pike.png?raw=true",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Third Chaplain [To be compared]",
+			"source": "CursedSwamp",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d6 + 11",
+				"average": 49
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"wis": "+5",
+				"cha": "+3"
+			},
+			"skill": {
+				"intimidation": "+3",
+				"religion": "+2",
+				"deception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Celestial",
+				"Common"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The chaplain is a 5th-level spellcaster. It's spellcasting ability is Wisdom (save {@dc 13}, {@hit 5} to hit with spell attacks). The chaplain has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance|PHB}",
+								"{@spell light|PHB}",
+								"{@spell sacred flame|PHB} (fire damage)",
+								"{@spell thaumaturgy|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless|PHB}",
+								"{@spell cure wounds|PHB}",
+								"{@spell detect magic|PHB}",
+								"{@spell guiding bolt|PHB} (fire damage)"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person|PHB}",
+								"{@spell prayer of healing|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell create food and water|PHB}",
+								"{@spell dispel magic|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Zealous Accusation",
+					"entries": [
+						"As a bonus action the chaplain points at a creature he can see within 60 feet of him, the target must succeed on a {@dc 13} Charisma saving throw or become vulnerable to fire damage for a minute. A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Botafumeiro",
+					"entries": [
+						"The chaplain wears a botafumeiro, a smoke expelling heavy bell with a chain that he can use as both melee weapon and spellcasting focus for his cleric spells."
+					]
+				},
+				{
+					"name": "Inspire Fanatism",
+					"entries": [
+						"As a bonus action the chaplain points at a creature he can see within 60 feet of him, the target takes 10 ({@damage 3d6}) fire damage and has advantage on all its attacks until the end of its next turn. A creature can resist this effect by succeding on a {@dc 13} Wisdom saving throw, or being invulnerable to the {@condition charmed} condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Botafumeiro Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, plus 7 ({@damage 2d6}) fire damage. A creature hit by this attack must succeed on a {@dc 13} Dexterity saving throw or be {@condition blinded} until the end of its next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://github.com/Guipirod/cursed-swamp/blob/master/tokens/chaplain.png?raw=true",
+			"languageTags": [
+				"CE",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Third Soldier",
+			"source": "CursedSwamp",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+3",
+				"con": "+4"
+			},
+			"skill": {
+				"intimidation": "+1",
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The soldier has advantage on an attack roll against a creature if at least one of the soldier's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Trickery Training",
+					"entries": [
+						"The Third Soldier can take the action {@action Disengage} as a bonus action on each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The soldier makes two melee attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/Guipirod/cursed-swamp/master/tokens/third_soldier_sword.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
 			]
 		},
 		{
